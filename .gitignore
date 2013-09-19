@@ -1,3 +1,5 @@
 target/
 releaseAndUpload.sh
 nb-configuration.xml
+release.properties
+
