@@ -1,7 +1,4 @@
-#set( $symbol_pound = '#' )
-#set( $symbol_dollar = '$' )
-#set( $symbol_escape = '\' )
-package ${package}.business.flightcontrol.boundary;
+package com.airhacks.followme.business.flightcontrol.boundary;
 
 /*
  * #%L
@@ -22,9 +19,6 @@ package ${package}.business.flightcontrol.boundary;
  * limitations under the License.
  * #L%
  */
-
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
 import javax.annotation.PostConstruct;
 
 /**

@@ -1,7 +1,4 @@
-#set( $symbol_pound = '#' )
-#set( $symbol_dollar = '$' )
-#set( $symbol_escape = '\' )
-package ${package}.presentation.${artifactId};
+package com.airhacks.followme.presentation;
 
 /*
  * #%L
@@ -22,8 +19,7 @@ package ${package}.presentation.${artifactId};
  * limitations under the License.
  * #L%
  */
-
-import ${package}.business.flightcontrol.boundary.Tower;
+import com.airhacks.followme.business.flightcontrol.boundary.Tower;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javax.inject.Inject;

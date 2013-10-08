@@ -1,7 +1,4 @@
-#set( $symbol_pound = '#' )
-#set( $symbol_dollar = '$' )
-#set( $symbol_escape = '\' )
-package ${package};
+package com.airhacks.followme;
 
 /*
  * #%L
@@ -22,9 +19,8 @@ package ${package};
  * limitations under the License.
  * #L%
  */
-
-import ${groupId}.afterburner.injection.InjectionProvider;
-import ${package}.presentation.${artifactId}.FollowmeView;
+import com.airhacks.afterburner.injection.InjectionProvider;
+import com.airhacks.followme.presentation.FollowmeView;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
