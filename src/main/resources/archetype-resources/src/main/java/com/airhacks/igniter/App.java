@@ -20,7 +20,7 @@ package com.airhacks.igniter;
  * #L%
  */
 import com.airhacks.afterburner.injection.InjectionProvider;
-import com.airhacks.igniter.presentation.FollowmeView;
+import com.airhacks.igniter.presentation.followme.FollowmeView;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
