@@ -1,4 +1,4 @@
-package com.airhacks.followme.presentation;
+package com.airhacks.igniter.presentation.followme;
 
 /*
  * #%L
@@ -19,7 +19,7 @@ package com.airhacks.followme.presentation;
  * limitations under the License.
  * #L%
  */
-import com.airhacks.followme.business.flightcontrol.boundary.Tower;
+import com.airhacks.igniter.business.flightcontrol.boundary.Tower;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javax.inject.Inject;

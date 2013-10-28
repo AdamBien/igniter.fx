@@ -1,4 +1,4 @@
-package com.airhacks.followme.business.flightcontrol.boundary;
+package com.airhacks.igniter.business.flightcontrol.boundary;
 
 /*
  * #%L

@@ -1,4 +1,4 @@
-package com.airhacks.followme.presentation;
+package com.airhacks.igniter.presentation.followme;
 
 /*
  * #%L
