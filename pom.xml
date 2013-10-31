@@ -8,7 +8,7 @@
     </parent>
     <groupId>com.airhacks</groupId>
     <artifactId>igniter</artifactId>
-    <version>1.8</version>
+    <version>1.9-SNAPSHOT</version>
     <packaging>maven-archetype</packaging>
     <name>igniter</name>
     <description>An application template for building Java FX MVP applications
@@ -112,7 +112,7 @@
         <connection>scm:git:git@github.com:AdamBien/igniter.fx.git</connection>
         <url>scm:git:git@github.com:AdamBien/igniter.fx.git</url>
         <developerConnection>scm:git:git@github.com:AdamBien/igniter.fx.git</developerConnection>
-        <tag>v1.8</tag>
+        <tag>HEAD</tag>
     </scm>
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
