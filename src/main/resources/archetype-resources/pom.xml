@@ -37,11 +37,10 @@ limitations under the License.
         <dependency>
             <groupId>com.airhacks</groupId>
             <artifactId>afterburner.fx</artifactId>
-            <version>1.1</version>
+            <version>1.2</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
-
     <build>
         <defaultGoal>clean package</defaultGoal>
         <plugins>
@@ -100,6 +99,7 @@ limitations under the License.
                 <includes>
                     <include>**/*.fxml</include>
                     <include>**/*.css</include>
+                    <include>**/*.properties</include>
                 </includes>
             </resource>
             <resource>
@@ -109,7 +109,6 @@ limitations under the License.
                 </includes>
             </resource>
         </resources>
-        <finalName>followme</finalName>
     </build>
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
