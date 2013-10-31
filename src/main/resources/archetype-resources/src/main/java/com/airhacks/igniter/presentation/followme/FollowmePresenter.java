@@ -20,7 +20,10 @@ package com.airhacks.igniter.presentation.followme;
  * #L%
  */
 import com.airhacks.igniter.business.flightcontrol.boundary.Tower;
+import java.net.URL;
+import java.util.ResourceBundle;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javax.inject.Inject;
 
@@ -28,14 +31,22 @@ import javax.inject.Inject;
  *
  * @author adam-bien.com
  */
-public class FollowmePresenter {
+public class FollowmePresenter implements Initializable {
 
     @FXML
     Label message;
     @Inject
     Tower tower;
 
-    public void launch() {
-        message.setText(tower.readyToTakeoff());
+    String pilot;
+
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        this.pilot = rb.getString("pilot");
     }
+
+    public void launch() {
+        message.setText(tower.readyToTakeoff(pilot));
+    }
+
 }
