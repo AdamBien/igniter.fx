@@ -32,8 +32,8 @@ public class Tower {
         System.out.println("Tower.init()");
     }
 
-    public String readyToTakeoff() {
-        System.out.println("Ready to take-off");
+    public String readyToTakeoff(String pilot) {
+        System.out.println(pilot + " is ready to take-off");
         return "ok from tower";
     }
 }
