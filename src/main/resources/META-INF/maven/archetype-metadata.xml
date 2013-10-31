@@ -35,6 +35,7 @@ limitations under the License.
                 <include>**/*.fxml</include>
                 <include>**/*.bak</include>
                 <include>**/*.css</include>
+                <include>**/*.properties</include>
             </includes>
         </fileSet>
         <fileSet filtered="false" packaged="false" encoding="UTF-8">
