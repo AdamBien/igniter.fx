@@ -1,24 +1,8 @@
-followme.fx
+igniter.fx
 ===========
 
-A better name would be "cloneme.fx". Follow me is the simplest possible afterburner.fx
-application demonstrating:
-
-1. CSS and FXML integration
-2. Integration with [http://afterburner.adam-bien.com](http://afterburner.adam-bien.com)
-3. Dependency Injection of models / services
-4. Maven 3 Build
-
-Builder and install afterburner.fx first:
-
-1. git clone https://github.com/AdamBien/afterburner.fx
-2. cd afterburner.fx
-3. mvn
-
-Then build followme.fx
-
-1. git clone https://github.com/AdamBien/followme.fx
-2. cd followme.fx
-3. mvn
+0. Use recent JDK 8 (JavaFX is already in the classpath). You can use the build.sh to temporarily set the JAVA_HOME in the script
+1. Build the project with mvn clean install
+2. Start the application with java -jar ./target/[project.artifactId]-app.jar
 
 See also: [http://afterburner.adam-bien.com](http://afterburner.adam-bien.com)
