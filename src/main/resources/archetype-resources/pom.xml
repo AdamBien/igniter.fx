@@ -83,7 +83,7 @@ limitations under the License.
                                 <argument>-srcdir</argument>
                                 <argument>${project.build.directory}/classes</argument>
                                 <argument>-outdir</argument>
-                                <argument>./target</argument>
+                                <argument>.</argument>
                                 <argument>-outfile</argument>
                                 <argument>${project.artifactId}-app</argument>
                                 <argument>-v</argument>
