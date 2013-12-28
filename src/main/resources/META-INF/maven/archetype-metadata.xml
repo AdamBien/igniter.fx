@@ -43,6 +43,7 @@ limitations under the License.
             <includes>
                 <include>.gitignore</include>
                 <include>build.sh</include>
+                <include>run.sh</include>
                 <include>README.md</include>
             </includes>
         </fileSet>
