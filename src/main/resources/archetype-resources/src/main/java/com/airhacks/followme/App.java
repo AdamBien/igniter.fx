@@ -1,4 +1,4 @@
-package com.airhacks.igniter;
+package com.airhacks.followme;
 
 /*
  * #%L
@@ -20,7 +20,7 @@ package com.airhacks.igniter;
  * #L%
  */
 import com.airhacks.afterburner.injection.InjectionProvider;
-import com.airhacks.igniter.presentation.followme.FollowmeView;
+import com.airhacks.followme.presentation.followme.FollowmeView;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -33,6 +33,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
+        System.setProperty("happyEnding", " Enjoy the flight!");
         FollowmeView appView = new FollowmeView();
         Scene scene = new Scene(appView.getView());
         stage.setTitle("${artifactId}.fx v${version}");
