@@ -4,7 +4,7 @@ package com.airhacks.followme.business.flightcontrol.boundary;
  * #%L
  * igniter
  * %%
- * Copyright (C) 2013 Adam Bien
+ * Copyright (C) 2013 - 2014 Adam Bien
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,6 +20,8 @@ package com.airhacks.followme.business.flightcontrol.boundary;
  * #L%
  */
 
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 import javax.annotation.PostConstruct;
 
 /**

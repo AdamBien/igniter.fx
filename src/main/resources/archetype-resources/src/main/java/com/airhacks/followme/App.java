@@ -4,7 +4,7 @@ package com.airhacks.followme;
  * #%L
  * igniter
  * %%
- * Copyright (C) 2013 Adam Bien
+ * Copyright (C) 2013 - 2014 Adam Bien
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,8 +19,13 @@ package com.airhacks.followme;
  * limitations under the License.
  * #L%
  */
-import com.airhacks.afterburner.injection.InjectionProvider;
+
+import com.airhacks.afterburner.injection.Injector;
 import com.airhacks.followme.presentation.followme.FollowmeView;
+import java.time.LocalDate;
+import java.time.Month;
+import java.util.HashMap;
+import java.util.Map;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -33,10 +38,22 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
+        /*
+         * Properties of any type can be easily injected.
+         */
+        LocalDate date = LocalDate.of(4242, Month.JULY, 21);
+        Map<Object, Object> customProperties = new HashMap<>();
+        customProperties.put("date", date);
+        /*
+         * any function which accepts an Object as key and returns
+         * and return an Object as result can be used as source.
+         */
+        Injector.setConfigurationSource(customProperties::get);
+
         System.setProperty("happyEnding", " Enjoy the flight!");
         FollowmeView appView = new FollowmeView();
         Scene scene = new Scene(appView.getView());
-        stage.setTitle("${artifactId}.fx v${version}");
+        stage.setTitle("followme.fx");
         final String uri = getClass().getResource("app.css").toExternalForm();
         scene.getStylesheets().add(uri);
         stage.setScene(scene);
@@ -45,7 +62,7 @@ public class App extends Application {
 
     @Override
     public void stop() throws Exception {
-        InjectionProvider.forgetAll();
+        Injector.forgetAll();
     }
 
     public static void main(String[] args) {
