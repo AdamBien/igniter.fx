@@ -1,4 +1,4 @@
-package com.airhacks.followme.presentation.followme;
+package com.airhacks.followme.dashboard;
 
 /*
  * #%L
@@ -26,5 +26,5 @@ import com.airhacks.afterburner.views.FXMLView;
  *
  * @author adam-bien.com
  */
-public class FollowmeView extends FXMLView {
+public class DashboardView extends FXMLView {
 }

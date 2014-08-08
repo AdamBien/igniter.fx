@@ -1,4 +1,4 @@
-package com.airhacks.followme.business.flightcontrol.boundary;
+package com.airhacks.followme.dashboard.light;
 
 /*
  * #%L
@@ -20,23 +20,17 @@ package com.airhacks.followme.business.flightcontrol.boundary;
  * #L%
  */
 
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
-import javax.annotation.PostConstruct;
+import com.airhacks.afterburner.views.FXMLView;
+import java.util.function.Function;
 
 /**
  *
- * @author adam-bien.com
+ * @author airhacks.com
  */
-public class Tower {
+public class LightView extends FXMLView {
 
-    @PostConstruct
-    public void init() {
-        System.out.println("Tower.init()");
+    public LightView(Function<String, Object> injectionContext) {
+        super(injectionContext);
     }
 
-    public String readyToTakeoff() {
-        System.out.println("Ready to take-off");
-        return "ok from tower";
-    }
 }
