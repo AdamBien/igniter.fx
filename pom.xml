@@ -8,7 +8,7 @@
     </parent>
     <groupId>com.airhacks</groupId>
     <artifactId>igniter</artifactId>
-    <version>1.9.3-SNAPSHOT</version>
+    <version>1.9.4-SNAPSHOT</version>
     <packaging>maven-archetype</packaging>
     <name>igniter</name>
     <description>An application template for building Java FX MVP applications
@@ -38,14 +38,14 @@
             <extension>
                 <groupId>org.apache.maven.archetype</groupId>
                 <artifactId>archetype-packaging</artifactId>
-                <version>2.2</version>
+                <version>2.4</version>
             </extension>
         </extensions>
         <pluginManagement>
             <plugins>
                 <plugin>
                     <artifactId>maven-archetype-plugin</artifactId>
-                    <version>2.2</version>
+                    <version>2.4</version>
                 </plugin>
             </plugins>
         </pluginManagement>
@@ -53,7 +53,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>license-maven-plugin</artifactId>
-                <version>1.7</version>
+                <version>1.8</version>
                 <configuration>
                     <verbose>true</verbose>
                 </configuration>
@@ -73,7 +73,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
-                <version>1.5</version>
+                <version>1.6</version>
                 <executions>
                     <execution>
                         <id>sign-artifacts</id>
@@ -87,7 +87,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
-                <version>2.2.1</version>
+                <version>3.0.0</version>
                 <executions>
                     <execution>
                         <id>attach-sources</id>
@@ -101,7 +101,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <version>2.4.1</version>
+                <version>2.5.3</version>
                 <configuration>
                     <tagNameFormat>v@{project.version}</tagNameFormat>
                 </configuration>
