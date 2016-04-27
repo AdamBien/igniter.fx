@@ -4,7 +4,7 @@ package com.airhacks.followme.dashboard;
  * #%L
  * igniter
  * %%
- * Copyright (C) 2013 - 2014 Adam Bien
+ * Copyright (C) 2013 - 2016 Adam Bien
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -58,7 +58,7 @@ public class DashboardPresenter implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        //fetched from followme.properties
+        //fetched from dashboard.properties
         this.theVeryEnd = rb.getString("theEnd");
     }
 

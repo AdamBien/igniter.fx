@@ -4,7 +4,7 @@ package com.airhacks.followme.dashboard.light;
  * #%L
  * igniter
  * %%
- * Copyright (C) 2013 - 2014 Adam Bien
+ * Copyright (C) 2013 - 2016 Adam Bien
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,6 +22,7 @@ package com.airhacks.followme.dashboard.light;
 
 import com.airhacks.afterburner.views.FXMLView;
 import java.util.function.Function;
+import javafx.scene.Parent;
 
 /**
  *
@@ -31,6 +32,15 @@ public class LightView extends FXMLView {
 
     public LightView(Function<String, Object> injectionContext) {
         super(injectionContext);
+    }
+
+    @Override
+    public Parent getView() {
+        try {
+            Thread.sleep((long) (Math.random() * 100));
+        } catch (InterruptedException ex) {
+        }
+        return super.getView(); //To change body of generated methods, choose Tools | Templates.
     }
 
 }
